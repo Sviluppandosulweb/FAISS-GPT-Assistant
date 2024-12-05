@@ -1,32 +1,37 @@
 # FAISS-GPT-Assistant
-FAISS-GPT Assistant is an interactive graphical application built with Python and Tkinter that integrates OpenAI GPT with FAISS (Facebook AI Similarity Search). This tool enables advanced search and conversational capabilities by indexing and monitoring your documents.
 
-Key Features:
+**FAISS-GPT Assistant** is an interactive graphical application built with Python and Tkinter that integrates OpenAI GPT with FAISS (Facebook AI Similarity Search). This tool enables advanced search and conversational capabilities by indexing and monitoring your documents.
 
-    File and directory indexing with FAISS.
-    Automatic file change monitoring using Watchdog.
-    Advanced conversational queries with OpenAI GPT support.
-    Persistent conversation history with response invalidation for outdated data.
-    Intuitive GUI for model configuration, content indexing, and AI interaction.
+## Key Features
 
-API Configuration Guide
+- **File and Directory Indexing**: Index files and directories with FAISS.
+- **Automatic Monitoring**: Track file changes using Watchdog.
+- **Advanced Conversational Queries**: Use OpenAI GPT to answer questions based on indexed documents.
+- **Persistent Conversation History**: Responses are invalidated for outdated data when files change.
+- **User-Friendly Interface**: Configure and utilize AI models with an intuitive GUI.
 
-To use FAISS-GPT Assistant, you must configure your OpenAI API key. Follow these steps based on your operating system.
-On Linux/Mac
+---
 
-    Open your ~/.bashrc or ~/.zshrc file with a text editor:
+## API Configuration Guide
 
-nano ~/.bashrc
+To use **FAISS-GPT Assistant**, you must configure your OpenAI API key. Follow these steps based on your operating system.
+
+### On Linux/Mac
+
+1. Open your `~/.bashrc` or `~/.zshrc` file with a text editor:
+   ```bash
+   nano ~/.bashrc
 
 or:
 
 nano ~/.zshrc
 
-Add the following line at the end of the file:
+    Add the following line at the end of the file:
 
 export OPENAI_API_KEY="your_api_key_here"
 
 Save the file and close the editor.
+
 Apply the changes to your terminal:
 
 source ~/.bashrc
